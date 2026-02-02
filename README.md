@@ -1,4 +1,4 @@
-#Predicting 30-Day Hospital Readmissions
+Predicting 30-Day Hospital Readmissions
 ##Project Overview
 
 Hospital readmissions within 30 days are a major quality-of-care metric and a source of significant cost for healthcare systems.
@@ -13,7 +13,7 @@ Predict whether a patient will be readmitted within 30 days of discharge using s
 * Quality improvement & cost reduction
 
 ---
-##Dataset
+Dataset
 
 **Source:** Kaggle – *Diabetes 130-US Hospitals for Years 1999–2008*
 
@@ -23,22 +23,22 @@ Predict whether a patient will be readmitted within 30 days of discharge using s
 
 **Target Variable:**
 
-#'readmit_30' → 1 if readmitted within 30 days, else 0
+'readmit_30' → 1 if readmitted within 30 days, else 0
 
-##Modeling Approach
+Modeling Approach
 
-### Baseline Model
+Baseline Model
 
 * Logistic Regression
 * Interpretable and clinically intuitive
 
-### Advanced Model
+Advanced Model
 
 * **LightGBM Classifier**
 * Handles high-cardinality categorical features efficiently
 * Strong performance on tabular healthcare data
 
-### Evaluation Metrics
+Evaluation Metrics
 
 * ROC-AUC (primary)
 * Precision / Recall
@@ -46,7 +46,7 @@ Predict whether a patient will be readmitted within 30 days of discharge using s
 
 ---
 
-## 🔍 Model Explainability
+Model Explainability
 
 SHAP (SHapley Additive exPlanations) is used to:
 
@@ -54,11 +54,11 @@ SHAP (SHapley Additive exPlanations) is used to:
 * Identify globally important risk factors
 * Support clinical trust and transparency
 
-> The model is positioned as a decision-support tool, not a replacement for clinicians.
+The model is positioned as a decision-support tool, not a replacement for clinicians.
 
 ---
 
-## Bias & Ethical Considerations
+Bias & Ethical Considerations
 
 * Readmission rates analyzed across demographic groups
 * Discussion of socioeconomic confounding
@@ -66,7 +66,7 @@ SHAP (SHapley Additive exPlanations) is used to:
 
 ---
 
-##Key Findings
+Key Findings
 
 * Prior utilization (inpatient + ED visits) strongly predicts readmission
 * Medication complexity increases readmission risk
@@ -74,7 +74,7 @@ SHAP (SHapley Additive exPlanations) is used to:
 
 ---
 
-#Future Improvements
+Future Improvements
 
 * Add temporal modeling (sequence of visits)
 * Incorporate social determinants of health
